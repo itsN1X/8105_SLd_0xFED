@@ -11,11 +11,11 @@ Usando a rede Stellar, você pode construir wallets para celular, ferramentas ba
 
 A maneira mais fácil de instalar o Horizon é usando a [imagem **stellar/quickstart** do docker](https://hub.docker.com/r/stellar/quickstart/).
 
-O Stellar.org mantém SDKs baseados em [JavaScript](https://github.com/stellar/js-stellar-sdk), [Java](https://github.com/stellar/java-stellar-sdk) e [Go](https://github.com/stellar/go/tree/master/clients/horizon) para comunicar-se com o Horizon. Também há SDKs mantidos pela comunidade para [Ruby](https://github.com/stellar/ruby-stellar-sdk), [Python](https://github.com/StellarCN/py-stellar-base) e [C#](https://github.com/QuantozTechnology/csharp-stellar-base).
+O Stellar.org mantém SDKs baseados em [JavaScript](https://github.com/stellar/js-stellar-sdk), [Java](https://github.com/stellar/java-stellar-sdk) e [Go](https://github.com/stellar/go/tree/master/clients/horizon) para comunicar-se com o Horizon. Também há SDKs mantidos pela comunidade para [Ruby](https://github.com/astroband/ruby-stellar-sdk), [Python](https://github.com/StellarCN/py-stellar-base) e [C#](https://github.com/QuantozTechnology/csharp-stellar-base).
 
 ## A Base da Rede: Stellar Core
 
-Nos bastidores, cada servidor do Horizon se conecta ao **[Stellar Core](../../stellar-core/learn/admin.html), a base da rede Stellar.** O software do Stellar Core faz o trabalho pesado de validar e concordar com outras instâncias do Core sobre o status de toda transação por meio do [Protocolo de Consenso Stellar](../concepts/scp.html), ou Stellar Consensus Protocol (SCP). A rede Stellar em si é um conjunto de Stellar Cores conectados, sendo rodados por vários indivíduos e entidades ao redor do mundo. Algumas instâncias têm um servidor do Horizon com que é possível se comunicar, enquanto que outras existem apenas para dar mais confiabilidade à rede como um todo.
+Nos bastidores, cada servidor do Horizon se conecta ao **[Stellar Core](https://www.stellar.org/developers/stellar-core/software/admin.html), a base da rede Stellar.** O software do Stellar Core faz o trabalho pesado de validar e concordar com outras instâncias do Core sobre o status de toda transação por meio do [Protocolo de Consenso Stellar](../concepts/scp.md), ou Stellar Consensus Protocol (SCP). A rede Stellar em si é um conjunto de Stellar Cores conectados, sendo rodados por vários indivíduos e entidades ao redor do mundo. Algumas instâncias têm um servidor do Horizon com que é possível se comunicar, enquanto que outras existem apenas para dar mais confiabilidade à rede como um todo.
 
 A maneira mais fácil de instalar o Horizon é usando a [imagem **stellar/quickstart** do docker](https://hub.docker.com/r/stellar/quickstart/).
 

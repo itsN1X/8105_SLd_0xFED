@@ -5,6 +5,10 @@ sequence:
   next: 3-federation-server.md
 ---
 
+## Deprecation Notice
+
+This guide explains how to set up a Stellar anchor service using a legacy flow outlined in [SEP-0003](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0003.md).  For most use cases, we actually recommend the workflow specified in [SEP-0024](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0024.md).  We are working on new documentation that explains that workflow, and it will be ready soon.  In the meantime, check the [Basic Anchor Implementation section](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0024.md#basic-anchor-implementation) included in SEP-0024.
+
 Stellar.org maintains a [bridge server](https://github.com/stellar/bridge-server/blob/master/readme_bridge.md), which makes it easier to use the federation and compliance servers to send and receive payments. When using the bridge server, the only code you need to write is a private service to receive payment notifications and respond to regulatory checks from the bridge and compliance servers.
 
 ![Payment flow diagram](assets/anchor-send-payment-basic-bridge.png)
@@ -14,7 +18,7 @@ When using the bridge server, you send payments by making an HTTP POST request t
 
 ## Create a Database
 
-The bridge server requires a MySQL or PostgreSQL database in order to track and coordinate transaction and compliance information. Create an empty database named `stellar_bridge` and a user to manage it. You don’t need to add any tables; the bridge server has [a special command to do that for you](#start-the-server).
+The bridge server requires a PostgreSQL database in order to track and coordinate transaction and compliance information. Create an empty database named `stellar_bridge` and a user to manage it. You don’t need to add any tables; the bridge server has [a special command to do that for you](#start-the-server).
 
 
 ## Download and Configure Bridge Server
@@ -37,8 +41,8 @@ code="USD"
 issuer="GAIUIQNMSXTTR4TGZETSQCGBTIF32G2L5P4AML4LFTMTHKM44UHIN6XQ"
 
 [database]
-type = "mysql"  # or "postgres" if you created a postgres database
-url = "dbuser:dbpassword@/stellar_bridge"
+type = "postgres"
+url = "postgres://dbuser@dbhost/bridge"
 
 [accounts]
 # The secret seed for your base account, from which payments are made
@@ -280,6 +284,8 @@ server.loadAccount(sourceKeys.publicKey())
       }))
       // Use the memo to indicate the customer this payment is intended for.
       .addMemo(StellarSdk.Memo.text('Amy'))
+      // Wait a maximum of three minutes for the transaction
+      .setTimeout(180)
       .build();
     transaction.sign(sourceKeys);
     return server.submitTransaction(transaction);

@@ -4,6 +4,10 @@ sequence:
   next: 2-bridge-server.md
 ---
 
+## Deprecation Notice
+
+This guide explains how to set up a Stellar anchor service using a legacy flow outlined in [SEP-0003](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0003.md).  For most use cases, we actually recommend the workflow specified in [SEP-0024](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0024.md).  We are working on new documentation that explains that workflow, and it will be ready soon.  In the meantime, check the [Basic Anchor Implementation section](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0024.md#basic-anchor-implementation) included in SEP-0024.
+
 Anchors are entities that people trust to hold their deposits and [issue credits](../issuing-assets.md) into the Stellar network for those deposits. All money transactions in the Stellar network (except lumens) occur in the form of credit issued by anchors, so anchors act as a bridge between existing currencies and the Stellar network. Most anchors are organizations like banks, savings institutions, farmers’ co-ops, central banks, and remittance companies.
 
 Before continuing, you should be familiar with:
@@ -94,7 +98,7 @@ When someone is sending a transaction to you, the flow is slightly different:
 5. The bridge server monitors the Stellar network for the transaction and sends it to your compliance server to verify that it was the same transaction you approved in step 3.1.
 6. The bridge server contacts a service you implement to notify you about the transaction. You can use this step to update your customer’s account balances.
 
-**While these steps can seem complicated, Stellar’s bridge, federation, and compliance services do most of the work.** You only need to implement four callbacks and create a [stellar.toml](../concepts/stellar-toml.html) file where others can find the URL of your services.
+**While these steps can seem complicated, Stellar’s bridge, federation, and compliance services do most of the work.** You only need to implement four callbacks and create a [stellar.toml](../concepts/stellar-toml.md) file where others can find the URL of your services.
 
 In the rest of this guide, we’ll walk through setting up each part of this infrastructure step by step.
 

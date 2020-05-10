@@ -1,7 +1,7 @@
 ---
 title: Stellar Network Overview
 ---
-![Stellar Ecosystem](https://www.stellar.org/wp-content/uploads/2016/06/Stellar-Ecosystem-v031.png)
+![Stellar Ecosystem](assets/developers.png)
 
 Using the Stellar network, you can build mobile wallets, banking tools, smart devices that pay for themselves, and just about anything else you can dream up involving payments! Even though Stellar is a complex distributed system, working with it doesn’t need to be complicated.
 
@@ -11,11 +11,11 @@ Using the Stellar network, you can build mobile wallets, banking tools, smart de
 
 The easiest way to install Horizon is by using the [**stellar/quickstart** docker image](https://hub.docker.com/r/stellar/quickstart/).
 
-Stellar.org maintains [JavaScript](https://github.com/stellar/js-stellar-sdk), [Java](https://github.com/stellar/java-stellar-sdk), and [Go](https://github.com/stellar/go/tree/master/clients/horizon)-based SDKs for communicating with Horizon. There are also community-maintained SDKs for [Ruby](https://github.com/stellar/ruby-stellar-sdk), [Python](https://github.com/StellarCN/py-stellar-base), and [C#](https://github.com/elucidsoft/dotnet-stellar-sdk).
+Stellar.org maintains [JavaScript](https://github.com/stellar/js-stellar-sdk), [Java](https://github.com/stellar/java-stellar-sdk), and [Go](https://github.com/stellar/go/tree/master/clients/horizon)-based SDKs for communicating with Horizon. There are also community-maintained SDKs for [Ruby](https://github.com/astroband/ruby-stellar-sdk), [Python](https://github.com/StellarCN/py-stellar-base), and [C#](https://github.com/elucidsoft/dotnet-stellar-sdk).
 
 ## Network Backbone: Stellar Core
 
-Behind the scenes, every Horizon server connects to **[Stellar Core](../../stellar-core/learn/admin.html), the backbone of the Stellar network.** The Stellar Core software does the hard work of validating and agreeing with other instances of Core on the status of every transaction through the [Stellar Consensus Protocol](../concepts/scp.html) (SCP). The Stellar network itself is a collection of connected Stellar Cores run by various individuals and entities around the world. Some instances have a Horizon server you can communicate with, while others exist only to add reliability to the overall network.
+Behind the scenes, every Horizon server connects to **[Stellar Core](https://www.stellar.org/developers/stellar-core/software/admin.html), the backbone of the Stellar network.** The Stellar Core software does the hard work of validating and agreeing with other instances of Core on the status of every transaction through the [Stellar Consensus Protocol](../concepts/scp.md) (SCP). The Stellar network itself is a collection of connected Stellar Cores run by various individuals and entities around the world. Some instances have a Horizon server you can communicate with, while others exist only to add reliability to the overall network.
 
 The easiest way to install Stellar Core is by using the [**stellar/quickstart** docker image](https://hub.docker.com/r/stellar/quickstart/).
 

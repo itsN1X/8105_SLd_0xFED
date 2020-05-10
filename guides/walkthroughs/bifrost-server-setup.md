@@ -2,7 +2,7 @@
 title: Bifrost Server Setup
 ---
 
-Bifrost is a service that enables users to move BTC/ETH to the Stellar network. It can either be used to give a representation of BTC or ETH on the network or trade it to another custom token. This is particularly useful for ICOs (Initial Coin Oferrings). 
+Bifrost is a service that enables users to move BTC/ETH to the Stellar network. It can either be used to give a representation of BTC or ETH on the network or trade it to another custom token. This is particularly useful for ICOs (Initial Coin Offerings). 
 This guide will focus on how to setup the Bifrost server to move ETH to the Stellar network.
 
 ## What you will need
@@ -31,14 +31,14 @@ This won't be covered here as there are handy documentation on how to set this u
 
 Bifrost will automatically exchange the received BTC or ETH for your custom token. For this to happen, there has to be a sell order for the CUSTOM-TOKEN/BTC OR CUSTOM-TOKEN/ETH asset pairs on the Stellar's distributed exchange.
 
-For example, let's say the exchange rate is 1 `TOKE` for 0.2 `ETH`. You can use [Stellar Laboratory](https://www.stellar.org/laboratory/) to create and submit a manage offer operation:
+For example, let's say the exchange rate is 1 `TOKE` for 0.2 `ETH`. You can use [Stellar Laboratory](https://www.stellar.org/laboratory/) to create and submit a manage sell offer operation:
 
 - Go to the "Transaction Builder" tab
 - Take note of the toggle button on the top right of the page with “test/public” ensure it is set to public for live transactions and test for transactions on the testnet
 - Fill the form on the page:
   - Enter Source account (Asset Issuer or Distributing Account)
   - Click the "Fetch next sequence number" button
-  - Scroll down, add select operation type: "Manage Offer"
+  - Scroll down, add select operation type: "Manage Sell Offer"
   - For selling: Select Alphanumeric 4
   - Enter Asset Code: `TOKE`
   - Enter Issuer Account ID: Issuer Account

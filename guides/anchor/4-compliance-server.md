@@ -5,6 +5,10 @@ sequence:
   next: 5-conclusion.md
 ---
 
+## Deprecation Notice
+
+This guide explains how to set up a Stellar anchor service using a legacy flow outlined in [SEP-0003](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0003.md).  For most use cases, we actually recommend the workflow specified in [SEP-0024](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0024.md).  We are working on new documentation that explains that workflow, and it will be ready soon.  In the meantime, check the [Basic Anchor Implementation section](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0024.md#basic-anchor-implementation) included in SEP-0024.
+
 The task of an anchor is handling regulatory compliance, like Anti-Money Laundering (<abbr title="Anti-Money Laundering">AML</abbr>). To accomplish that, you should use the [Stellar compliance protocol](../compliance-protocol.md), a standard way to exchange compliance information and pre-approve a transaction with another financial institution.
 
 You can write your own server that matches the compliance protocol, but Stellar.org also provides a [compliance server](https://github.com/stellar/bridge-server/blob/master/readme_compliance.md) that takes care of most of the work for you.
@@ -20,7 +24,7 @@ When another compliance server contacts yours to clear a transaction, a series o
 
 ## Create a Database
 
-The compliance server requires a MySQL or PostgreSQL database in order to save transaction and compliance information. Create a new database named `stellar_compliance` and a user to manage it. You don’t need to add any tables; the server includes [a command to configure and update your database](#start-the-server).
+The compliance server requires a PostgreSQL database in order to save transaction and compliance information. Create a new database named `stellar_compliance` and a user to manage it. You don’t need to add any tables; the server includes [a command to configure and update your database](#start-the-server).
 
 
 ## Download and Configure Compliance Server
@@ -39,8 +43,8 @@ needs_auth = false
 network_passphrase = "Test SDF Network ; September 2015"
 
 [database]
-type = "mysql" # Or "postgres" if you created a PostgreSQL database
-url = "dbuser:dbpassword@/stellar_compliance"
+type = "postgres"
+url = "postgres://dbuser@dbhost/compliance"
 
 [keys]
 # This should be the secret seed for your base account (or another account that

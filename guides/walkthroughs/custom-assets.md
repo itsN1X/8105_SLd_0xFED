@@ -113,7 +113,7 @@ Transaction A is created and submitted to the network by the issuing account. By
 #### Transaction 6: Token Distribution
 **Account**: distribution account  
 **Operations**:
-- [Manage Offer - Sell](../concepts/list-of-operations.md#manage-offer): create an offer to sell the created tokens
+- [Manage Sell Offer](../concepts/list-of-operations.md#manage-sell-offer): create an offer to sell the created tokens
 	- selling: created asset code format
 		- code: asset code
 		- issuer account: issuer account
@@ -136,7 +136,6 @@ By submitting Transaction 6, the created token will be listed on the Stellar Net
 Examples for some of the transactions and more about issuing assets can be found [here](../issuing-assets.md). In addition, [this article](../concepts/assets.md#anchors-issuing-assets) provides more in-depth explanations of key terms regarding asset creation. A preliminary guide that walks through explaining token creation using Stellar Laboratory is available [here](https://www.stellar.org/blog/tokens-on-stellar/).
 
 ## Resources:
-- [Becoming an Anchor](../anchor/) - Stellar<span>.org
 - [Minimum Account Balance Calculation](../concepts/fees.md#minimum-account-balance) - Stellar<span>.org
 - [Concept: stellar.toml](../concepts/stellar-toml.md) - Stellar<span>.org
 - [Concept: Trustlines](../concepts/assets.md#trustlines) - Stellar<span>.org

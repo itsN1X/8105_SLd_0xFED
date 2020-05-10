@@ -5,7 +5,7 @@ title: Stellar Software
 
 Pre-built software and services you can run on your own infrastructure, provided by Stellar.org.
 
-## [Stellar Core](../stellar-core/learn/admin.html)
+## [Stellar Core](../stellar-core/software/admin.md)
 Stellar Core is the backbone of the Stellar network and does the hard work of validating and agreeing on the status of every transaction with other instances of Core through the Stellar Consensus Protocol (SCP).
 
 ## [Horizon](https://github.com/stellar/go/tree/master/services/horizon)
@@ -21,7 +21,7 @@ A standalone Federation protocol server designed to be dropped in to your existi
 | Linux 32-bit (arm)  | [federation-arm-amd64](https://github.com/stellar/go/releases/download/federation-v0.2.0/federation-v0.2.0-linux-arm.tar.gz)       |
 | Windows 64-bit (amd64) | [federation-windows-amd64.exe](https://github.com/stellar/go/releases/download/federation-v0.2.0/federation-v0.2.0-windows-amd64.zip) |
 
-## [Bridge Server](https://github.com/stellar/bridge-server)
+## [Bridge Server](https://github.com/stellar/go/tree/master/services/bridge)
 Stellar’s Bridge server provides a simple interface for the Stellar network. It is meant to simplify compliance operations and other more complicated integrations. Because it stores and manages keys and account information, access to it should be well protected. Unlike Horizon, it should never be exposed to the public internet.
 
 ## [Archivist](https://github.com/stellar/go/tree/master/tools/stellar-archivist)

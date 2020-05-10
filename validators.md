@@ -1,8 +1,8 @@
 Stellar.org supports the network by running a few full validators and Horizon instances.
 
 If you would like to run a validator please:
- - Read the [admin guide](https://www.stellar.org/developers/stellar-core/learn/admin.html).
- - Join the #validators channel on [our slack](http://slack.stellar.org).
+ - Read the [admin guide](https://www.stellar.org/developers/stellar-core/software/admin.html).
+ - Join the #validators channel on [our Keybase team](https://keybase.io/team/stellar.public).
  - See the [example config](./other/stellar-core-validator-example.cfg) for setting up your validator.
  - Start your node.
  - Open a pull request to list it here.
@@ -28,6 +28,15 @@ Peer | stellar.alchymia.io
 Status | ![Online](https://img.shields.io/badge/status-online-brightgreen.svg)
 
 ----
+Name | AWorld.org
+-----|--------
+Description | AWorld.org
+Contact | andrea.b@aworld.org
+NodeID | GC3Q7I44RBNNCAYNIKG3G55HGRGIFCFSXUCEH7NF3XV3C43Y52QLSPZN
+Peer | stellar.aworld.org
+Status | ![Online](https://img.shields.io/badge/status-online-brightgreen.svg)
+
+----
 Name | badbox - chicago
 -----|--------
 Description | chicago based validator
@@ -42,6 +51,15 @@ Name | Coinplaycenter
 Description | https://www.coinplaycenter.com
 Contact | coinplaycenter@gmail.com (email), soufrilasp@gmail.com (email), Panagiotis (slack)
 NodeID | GBFKPET5EK4YDXAD24CQV5XIRFVHQPDPHU2T34ELEMKUPNPFG2MAZBBJ
+Status | ![Online](https://img.shields.io/badge/status-online-brightgreen.svg)
+
+------
+Name | COINQVEST
+-----|--------
+Description | https://www.coinqvest.com/.well-known/stellar.toml
+Contact | service[at]coinqvest.com
+NodeID | GADLA6BJK6VK33EM2IDQM37L5KGVCY5MSHSHVJA4SCNGNUIEOTCR6J5T <br /> GD6SZQV3WEJUH352NTVLKEV2JM2RH266VPEM7EH5QLLI7ZZAALMLNUVN <br /> GAZ437J46SCFPZEDLVGDMKZPLFO77XJ4QVAURSJVRZK2T5S7XUFHXI2Z
+Peer |  finland.stellar.coinqvest.com (Finland) <br/> germany.stellar.coinqvest.com	(Germany) <br/> hongkong.stellar.coinqvest.com	(Hong Kong)
 Status | ![Online](https://img.shields.io/badge/status-online-brightgreen.svg)
 
 -----
@@ -168,12 +186,12 @@ NodeID | GAE72U4C4MWPG6WAB2XW2EEHPQE3VMG7WRSET5FFDUAMBFR7P462QBC4
 Status | ![Online](https://img.shields.io/badge/status-online-brightgreen.svg)
 
 -----
-Name | localstellarassets.com
+Name | tradedirect.io
 -----|--------
-Description | https://www.localstellarassets.com
+Description | https://www.tradedirect.io
 Contact | hatter (slack) hatter@paywith.glass
 NodeID | GA4UHKRQNTYNOI7TMP6ZK2I52UEIBBHAW3LVLBUTSKVRTGDEDTJVKLI3
-Peer |  localstellarassets.com
+Peer |  tradedirect.io
 Status | ![Online](https://img.shields.io/badge/status-online-brightgreen.svg)
 
 ------
@@ -211,6 +229,16 @@ Peer | stellar0.numerotron.com
 Node ID | GC7WI424OUF6UVYOLVLZD7IOW7M6HTJTIGDX4USFMTAG3763PYOXGN7Q
 Status | ![Online](https://img.shields.io/badge/status-online-brightgreen.svg)
 
+
+------
+Name | Ocyan
+-----|--------
+Description | https://ocyan.com
+Contact | Evangelos Pappas <epappas@ocyan.com> - (keybase:epappas)
+Peer | stellar.ocyan.com
+Node ID | GA5MLJBI3PP4I66XZMZZDGOD4NFL3QM7B6EYHEWBWY67FYD3ZO4UZRWV
+Status | ![Online](https://img.shields.io/badge/status-online-brightgreen.svg)
+
 ------
 Name | paywith.glass (Ireland)
 -----|--------
@@ -238,13 +266,13 @@ Peer        | validator.stellar.republic.co
 Status      | ![Online](https://img.shields.io/badge/status-online-brightgreen.svg)
 
 ------
-Name | satoshipay
+Name | SatoshiPay
 -----|--------
 Description | https://satoshipay.io/
-Contact | andrenarchy (slack)
-Node 1 | GC5SXLNAM3C4NMGK2PXK4R34B5GNZ47FYQ24ZIBFDFOCU6D4KBN4POAE<br/>(peer stellar1.satoshipay.io)
-Node 2 | GBJQUIXUO4XSNPAUT6ODLZUJRV2NPXYASKUBY4G5MYP3M47PCVI55MNT<br/>(peer stellar2.satoshipay.io)
-Node 3 | GAK6Z5UVGUVSEK6PEOCAYJISTT5EJBB34PN3NOLEQG2SUKXRVV2F6HZY<br/>(peer stellar3.satoshipay.io)
+Contact | André Gaul (keybase/slack: andrenarchy)
+DE (Frankfurt) | Public key: GC5SXLNAM3C4NMGK2PXK4R34B5GNZ47FYQ24ZIBFDFOCU6D4KBN4POAE<br/>Peer: stellar-de-fra.satoshipay.io<br/>History: https://stellar-history-de-fra.satoshipay.io
+SG (Singapore) | Public key: GBJQUIXUO4XSNPAUT6ODLZUJRV2NPXYASKUBY4G5MYP3M47PCVI55MNT<br/>Peer: stellar-sg-sin.satoshipay.io<br/>History: https://stellar-history-sg-sin.satoshipay.io
+US (Iowa) | Public key: GAK6Z5UVGUVSEK6PEOCAYJISTT5EJBB34PN3NOLEQG2SUKXRVV2F6HZY<br/>Peer: stellar-us-iowa.satoshipay.io<br/>History: https://stellar-history-us-iowa.satoshipay.io
 Status | ![Online](https://img.shields.io/badge/status-online-brightgreen.svg)
 
 ---------
@@ -252,7 +280,7 @@ Name        | SDF
 ------------|--------
 Description | https://www.stellar.org
 Contact     | hello@stellar.org
-Node ID     | GB7H5CNUNVCM6KGG6P2LAQE4YZP4D6CHFJRSSS34VNEPDDVIFAWRJ7ZA <br/> GCM6QMP3DLRPTAZW2UZPCPX2LF3SXWXKPMP3GKFZBDSF3QZGV2G5QSTK <br/> GABMKJM6I25XI4K7U6XWMULOUQIQ27BCTMLS6BYYSOWKTBUXVRJSXHYQ
+Node ID     | GCGB2S2KGYARPVIA37HYZXVRM2YZUEXA6S33ZU5BUDC6THSB62LZSTYH <br/> GCM6QMP3DLRPTAZW2UZPCPX2LF3SXWXKPMP3GKFZBDSF3QZGV2G5QSTK <br/> GABMKJM6I25XI4K7U6XWMULOUQIQ27BCTMLS6BYYSOWKTBUXVRJSXHYQ
 Peer        | core-live-a.stellar.org <br/> core-live-b.stellar.org <br/> core-live-c.stellar.org 
 Status      | ![Online](https://img.shields.io/badge/status-online-brightgreen.svg)
 
@@ -293,11 +321,13 @@ Node 2 | GC5A5WKAPZU5ASNMLNCAMLW7CVHMLJJAKHSZZHE2KWGAJHZ4EW6TQ7PB<br/>(peer ohio
 Node 3 | GBRILQP7RHIEBJPLGZ5XP6YWTYFSOQARAKECACMEMGXR53X6IX75E2L5<br/>(peer ohio-3.stellar.stellarport.io)
 Status | ![Online](https://img.shields.io/badge/status-online-brightgreen.svg)
 
-Name | stellar.smoove.net
+----
+Name | stellar.sui.li
 -----|--------
-Contact | Chris Erice - cerice@pm.me
-Node 1 | GDCAQY2Q5VMMI4ZOX35GTL7X43LMP3RA5W4VCP6V2BB6IFOO76GACXZU<br/>(Toronto peer v1.stellar.smoove.net)
-Node 2 | GCXEKMPY6TDNNI2VBWFOEA23V22OZW2INSCGTKNEHIHJDPG2C53PURBG<br/>(Singapore peer v2.stellar.smoove.net)
+Description | https://stellar.sui.li
+Contact | [github.com/sui77](https://github.com/sui77/) - s@sui.li
+Peer | stellar.sui.li
+Node ID | GBHMXTHDK7R2IJFUIDIUWMR7VAKKDSIPC6PT5TDKLACEAU3FBAR2XSUI
 Status | ![Online](https://img.shields.io/badge/status-online-brightgreen.svg)
 
 ------
@@ -336,6 +366,17 @@ Contact | xaviablaza (slack), xlablaza@gmail.com (email)
 Node 1 | GCEFOV5PD54MX2BS4Q5EQNE6L7JRTDYKEFT7XYBRBWXI3HL47N5U7TSU
 Peer | xaviablaza.com
 Status | ![Online](https://img.shields.io/badge/status-online-brightgreen.svg)
+
+------
+Name | Wirex
+-----|--------
+Description | https://wirexapp.com
+Contact | devops@wirexapp.com
+UK | Public key: GBBQQT3EIUSXRJC6TGUCGVA3FVPXVZLGG3OJYACWBEWYBHU46WJLWXEU<br/>Peer: uk.stellar.wirexapp.com
+SG (Singapore) | Public key: GAB3GZIE6XAYWXGZUDM4GMFFLJBFMLE2JDPUCWUZXMOMT3NHXDHEWXAS<br/>Peer: sg.stellar.wirexapp.com
+US | Public key: GDXUKFGG76WJC7ACEH3JUPLKM5N5S76QSMNDBONREUXPCZYVPOLFWXUS<br/>Peer: us.stellar.wirexapp.com
+Status | ![Online](https://img.shields.io/badge/status-online-brightgreen.svg)
+
 
 ------
 # Offline servers

@@ -163,7 +163,7 @@ function handlePaymentResponse(record) {
 
 
 ## Submeter saques
-Quando um usuário pede um saque de lumens da sua exchange, você deve gerar uma transação Stellar para enviar os lumens a ele. Aqui se encontra uma documentação adicional sobre [Construir Transações](https://www.stellar.org/developers/js-stellar-base/learn/building-transactions.html).
+Quando um usuário pede um saque de lumens da sua exchange, você deve gerar uma transação Stellar para enviar os lumens a ele. Aqui se encontra uma documentação adicional sobre [Construir Transações](https://www.stellar.org/developers/js-stellar-base/reference/building-transactions.html).
 
 A função `handleRequestWithdrawal` irá enfileirar uma transação na tabela `StellarTransactions` da exchange sempre que houver um pedido de saque.
 
@@ -279,7 +279,7 @@ Para mais informações, dê uma olhada no [guia sobre federation](./concepts/fe
 ### Âncora
 Se você for uma exchange, é fácil se tornar uma âncora Stellar também. Os pontos de integração são muito parecidos, com o mesmo nível de dificuldade. Tornar-se uma âncora poderia expandir seus negócios.
 
-Para aprender mais sobre o que significa ser uma âncora, veja o [guia para âncoras](./anchor/index.html).
+Para aprender mais sobre o que significa ser uma âncora, veja o [guia para âncoras](./anchor/).
 
 ### Aceitar ativos não nativos
 Primeiro, abra uma [trustline](https://www.stellar.org/developers/guides/concepts/assets.html#trustlines) com a conta emissora do ativo não nativo; sem isso, não é possível começar a aceitar esse ativo.

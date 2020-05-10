@@ -29,14 +29,14 @@ Accounts have the following fields:
 > Number of other [entries](./ledger.md#ledger-entries) the account owns. This number is used to calculate the account's [minimum balance](./fees.md#minimum-account-balance).
 >
 > #### Inflation destination
-> (optional) Account designated to receive inflation. Every account can vote to send [inflation](./inflation.md) to a destination account.
+> (optional) Account designated to receive inflation. Every account with a balance of at least 100 XLM can vote to send [inflation](./inflation.md) to a destination account.
 >
 > #### Flags
 > Currently there are three flags, used by issuers of [assets](./assets.md).
 >
 >   - **Authorization required (0x1)**: Requires the issuing account to give other accounts permission before they can hold the issuing account's credit.
 >   - **Authorization revocable (0x2)**: Allows the issuing account to revoke its credit held by other accounts.
->   - **Authorization immutable (0x4)**: If this is set then none of the authorization flags can be set and the account can never be deleted.
+>   - **Authorization immutable (0x4)**: If this is set then none of the authorization flags can be changed and the account can never be deleted.
 >
 > #### Home domain
 > A domain name that can optionally be added to the account. Clients can look up a [stellar.toml](./stellar-toml.md) from this domain. This should be in the format of a [fully qualified domain name](https://en.wikipedia.org/wiki/Fully_qualified_domain_name) such as `example.com`.

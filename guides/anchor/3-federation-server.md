@@ -4,6 +4,9 @@ sequence:
   previous: 2-bridge-server.md
   next: 4-compliance-server.md
 ---
+## Deprecation Notice
+
+This guide explains how to set up a Stellar anchor service using a legacy flow outlined in [SEP-0003](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0003.md).  For most use cases, we actually recommend the workflow specified in [SEP-0024](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0024.md).  We are working on new documentation that explains that workflow, and it will be ready soon.  In the meantime, check the [Basic Anchor Implementation section](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0024.md#basic-anchor-implementation) included in SEP-0024.
 
 When testing the bridge server, we added a `memo` to the transaction in order to identify what customer account to credit. However, other people and organizations using Stellar might not know they need to do that. How do they find out?
 
@@ -16,7 +19,7 @@ Stellar.org provides a [prebuilt federation server](https://github.com/stellar/g
 
 ## Create a Database
 
-The Stellar federation server is designed to connect to any existing SQL database you might have with a list of account names. It essentially translates a federation request into a SQL query. The server supports MySQL, PostgreSQL, and SQLite3.
+The Stellar federation server is designed to connect to any existing SQL database you might have with a list of account names. It essentially translates a federation request into a SQL query. The server supports PostgreSQL and SQLite3.
 
 At a minimum, your database should have a table with a column identifying the name to use for each account record.[^federation_tables] In your existing system, you might have a table named `accounts` that looks something like:
 
@@ -41,8 +44,8 @@ Next, [download the latest federation server](https://github.com/stellar/go/rele
 port = 8002
 
 [database]
-type = "mysql" # Or "postgres" or "sqlite3"
-dsn = "dbuser:dbpassword@/internal_accounts"
+type = "postgres" # Or "sqlite3"
+dsn = "postgres://dbuser@dbhost/internal_accounts?sslmode=sslmode"
 
 [queries]
 federation = "SELECT 'GAIGZHHWK3REZQPLQX5DNUN4A32CSEONTU6CMDBO7GDWLPSXZDSYA4BU' as id, friendly_id as memo, 'text' as memo_type FROM accounts WHERE friendly_id = ? AND ? = 'your_org.com'"
